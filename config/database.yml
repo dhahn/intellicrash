@@ -1,0 +1,14 @@
+development:
+  adapter: mysql2
+  database: intelliclash_dev
+  pool: 5
+  username: root
+  password: t4r4
+  timeout: 5000
+production:
+  adapter: mysql2
+  database: intelliclash
+  pool: 5
+  username: root
+  password: t4r4
+  timeout: 5000
