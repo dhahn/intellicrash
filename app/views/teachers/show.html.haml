@@ -3,7 +3,8 @@
 		%h1 Most Intellectual Looking Faculty At MSU
 		%p.lead
 			%a.btn{href: "/"} Back
-			Ratings are determined through the Elo rating system.
+			Ratings are determined through the 
+			%a{href: "http://en.wikipedia.org/wiki/Elo_rating_system", target: "_blank"} Elo rating system.
 	-@teachers.each_with_index do |teacher,i|
 		-if (i+1) % 3 == 0
 			.row{style: "padding-bottom:10px;"}
