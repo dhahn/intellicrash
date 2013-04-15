@@ -11,6 +11,10 @@ gem 'elo'
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 2.3.1.0'
 
+
+group :development do
+  gem 'mysql2'
+end
 group :production do
   gem 'pg'
 end
