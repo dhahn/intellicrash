@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'glicko2'
-gem 'newrelic_rpm'
 gem 'elo'
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 2.3.1.0'
@@ -17,6 +16,7 @@ group :development do
 end
 group :production do
   gem 'pg'
+  gem 'rufus-scheduler'
 end
 
 # Gems used only for assets and not required

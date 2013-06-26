@@ -8,8 +8,9 @@
 	-@teachers.each_with_index do |teacher,i|
 		-if (i+1) % 3 == 0
 			.row{style: "padding-bottom:10px;"}
-				%img.img-polaroid.span3.offset1{src: "/assets/teachers/#{teacher.img_name}"}	
+				%img.teacher-img.img-polaroid.span3{src: "/assets/teachers/#{teacher.img_name}"}	
+				%h1#replaceStuff{style: "display:none"}= teacher.rating
 		-elsif (i+1) % 3 == 1
-			%img.img-polaroid.span3{src: "/assets/teachers/#{teacher.img_name}"}	
+			%img.teacher-img.img-polaroid.span3{src: "/assets/teachers/#{teacher.img_name}"}	
 		-else
-			%img.img-polaroid.span3.offset1{src: "/assets/teachers/#{teacher.img_name}"}	
+			%img.teacher-img.img-polaroid.span3.offset1{src: "/assets/teachers/#{teacher.img_name}"}	

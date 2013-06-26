@@ -13,3 +13,6 @@ $(document).on "click", '#teacher2', ->
     $(this).replaceWith(" <img src='/assets/ajax-loader.gif' class='span3 offset2'/>")
     $('#teacher1').replaceWith(" <img src='/assets/ajax-loader.gif' class='span3 offset2'/>")
     $.getScript("/teachers/t2/update_scores/"+id+"/"+id2)
+$(document).ready ->
+    $('.teacher-img').click ->
+        $('.teacher-img').replaceWith("#replaceStuff")
